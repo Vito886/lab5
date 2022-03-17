@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="92"
+		Width="450" Height="92"
+        x:Class="lab5.Views.RegexWindow"
+        Title="RegexWindow">
+
+	<Window.Styles>
+		<Style Selector="Button">
+			<Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+			<Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+			<Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+			<Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+		</Style>
+	</Window.Styles>
+	
+	<StackPanel>
+		<TextBox Name="regexInput" Text="{Binding RegexTemplate}"></TextBox>
+		<Button Name="okButton">OK</Button>
+		<Button Name="cancelButton">Cancel</Button>
+	</StackPanel>
+	
+</Window>
